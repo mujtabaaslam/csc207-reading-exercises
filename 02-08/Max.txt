@@ -1,0 +1,3 @@
+worst = O(n)
+best = O(1)
+Average = O(n)

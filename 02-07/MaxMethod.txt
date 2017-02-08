@@ -1,0 +1,4 @@
+1) Relevant input = array length (n)
+2) Operations to count = comparison between ret and arr[i] 
+3) max = avg = n
+min = 1
