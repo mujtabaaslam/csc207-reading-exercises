@@ -1,0 +1,14 @@
+1. 
+Stack 	       	Heap
+-----		 ----
+--main
+args [o-]-------->[]
+c    [ ]---------> Counter <-----
+                 value [ 1 ]    
+-- dowork                       
+c    [ ]---------> Counter <-----
+                 value [ 0 ]  
+
+
+2.
+1
