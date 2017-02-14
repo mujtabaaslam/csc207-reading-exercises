@@ -1,0 +1,21 @@
+public static int max(int[] arr) {
+int ret = arr[0];
+for (int i = 1; i < arr.length; i++) {
+if (arr[i] < ret) {
+ret = arr[i];
+}
+}
+return ret;
+}
+
+1. Entering the loop. When we first enter the loop, we haven’t seen any numbers yet. Therefore,
+we need to choose an initial value for ret that reflects this. We know that the array must have one item
+and then this will be the max value we have so far. Therefore, we set ret = arr[0]
+2. At the end of iteration of the loop. On the i-th iteration of the loop, we see the comparison 
+between arr[i] and ret. How do we update ret so that our loop invariant holds? We need to set ret = arr[i] 
+if arr[i] is larger than ret. Our program fails to do this because it checks for the opposite condition 
+if arr[i] is less than ret and then sets ret = arr[i] if this condition is true.
+3. After execution By satisfying the two previous rules—preserving the invariant while entering
+the loop and on every iteration—we know that the loop invariant is not preserved when the
+loop exits. Interpreting the loop invariant, we see that this implies that ret does not contain the max value 
+as it checks for the wrong condition.
