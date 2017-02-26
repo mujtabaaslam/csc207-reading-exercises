@@ -1,0 +1,9 @@
+Line (A)
+1. Yes the line of code type checks and there is no compilation error.
+2. C.foo
+
+Line (B)
+1. No the line of code does not type check and there will be compilation error.
+
+It tells us that Java subtyping is very precise and will reject functions which are not included in the interface.
+For example, if two classes both have the function bar but it is not included in the interface Java will reject the use of the function.
